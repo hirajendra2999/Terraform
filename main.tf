@@ -10,6 +10,6 @@ resource "aws_instance" "web" {
    key-name =  "shubham-idrsa"
    tags = {
     Env = "dev”
-    Name = "web" "dev”
+    Name = "web”
     }
 }
