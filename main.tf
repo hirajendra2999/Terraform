@@ -9,6 +9,7 @@ resource "aws_instance" "web" {
    key-name =  "ucanapply08jan18"
    tags = {
     Env = "dev”
+    
     Name = "web”
     }
 }
