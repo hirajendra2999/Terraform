@@ -8,7 +8,7 @@ resource "aws_instance" "web" {
    vpc_security_group_ids = ["sg-0274e4075f215241c"]
    key-name =  "ucanapply08jan18"
    tags = {
-    Env = "dev”
+        Env = "dev”
     Name = "web”
     }
 }
