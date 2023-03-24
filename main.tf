@@ -4,7 +4,7 @@ provider "aws"  {
 }
 
 resource "aws_instance" "web" {
-   ami = "ami-84b6c97b14c54de18"
+   ami = "i-0b0c5a9436d15ffc2"
    instance_type = "t2.micro"
    vpc_security_group_ids = ["sg-e6b55c897b98b677b"]
    key-name =  "shubham-idrsa"
