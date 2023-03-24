@@ -10,6 +10,6 @@ resource "aws_instance" "web"
    tags = 
         Env = "dev”
         Name = web
-    }
-}
+    
+
    
