@@ -2,7 +2,7 @@ provider "aws"  {
     region = "ap-south-1"
 }
 
-resource "aws_instance" "web" {
+resource "aws" {
    ami = "ami-0376ec8eacdf70aae"
    instance_type = "t2.micro"
    vpc_security_group_ids = ["sg-0274e4075f215241c"]
