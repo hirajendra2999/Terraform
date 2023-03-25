@@ -12,8 +12,7 @@ resource "aws_instance" "web"
         Name = web
     
 
-   provider "aws" {
-  profile    = "default"
+
   region     = "us-east-1"
 }
 
