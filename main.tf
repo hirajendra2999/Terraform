@@ -1,5 +1,6 @@
-provider "aws" 
-    region = "ap-south-1"
+   provider "aws" {
+  profile    = "default"
+     region     = "ap-south-1"
 
 
 resource "aws_instance" "web" 
@@ -13,7 +14,7 @@ resource "aws_instance" "web"
     
 
 
-  region     = "us-east-1"
+ us-east-1"
 }
 
 resource "aws_instance" "example" {
