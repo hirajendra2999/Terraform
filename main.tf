@@ -1,4 +1,4 @@
-   terraform {
+   terraform 
   required_providers {
     aws = {
       source = "hashicorp/aws"
@@ -11,4 +11,3 @@
    key-name =  "ucanapply08jan18"
 }
 }
-)
