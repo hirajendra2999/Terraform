@@ -9,7 +9,5 @@ resource "aws_instance" "example" {
   instance_type = "t2.micro"
    vpc_security_group_ids = ["sg-0274e4075f215241c"]
    key-name =  "ucanapply08jan18"
- 
-
-  
+}
 }
