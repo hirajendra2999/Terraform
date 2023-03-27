@@ -1,4 +1,7 @@
-   
+   terraform {
+  required_providers {
+    aws = {
+      source = "hashicorp/aws"
   profile    = "default"
      region     = "ap-south-1"
 
@@ -11,3 +14,5 @@ resource "aws_instance" "example" {
    key-name =  "ucanapply08jan18"
 }
 }
+)
+)
