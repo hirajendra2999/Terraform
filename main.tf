@@ -13,9 +13,10 @@
 }
 
 resource "aws_instance" "demo" {
- ami = “ami-00831fc7c1e3ddc60”
+ ami = “ami-0376ec8eacdf70aae”
  instance_type = “t2.micro”
-
+profile    = "default"
+     region     = "ap-south-1"
  tags = {
    name = "Demo System"
  }
