@@ -4,9 +4,7 @@ resource "aws_instance" "demo" {
  instance_type = “t2.micro”
 profile    = "default"
  instance_type    = 't2.micro'
-     region     = "ap-south-1"
-     key-name =  "ucanapply08jan18"
- tags = {
+  tags = {
    name = "Demo System"
  }
 }
