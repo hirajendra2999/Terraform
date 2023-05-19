@@ -9,3 +9,4 @@ resource "aws_instance" {
     instance_type = "t2.micro"
     key-name = "ucanapply08jan18"
 }
+}
