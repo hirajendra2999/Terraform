@@ -23,5 +23,6 @@ resource "aws_vpc" "my_vpc" {
 resource "aws_subnet" "pri_subnet" {
     vpc_id = aws_vpc.my_vpc.id
     cidr_block = var.pri_sub_cidr
+    
   
 }
