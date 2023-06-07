@@ -11,7 +11,7 @@ variable "vpc_name" {
 variable "vpc_cidr" {
     default = "10.10.0.0/16"
 }
-variable "instance_type"{
+variable "env"{
     default = "t2.micro"
 }
 variable "key_pair" {
