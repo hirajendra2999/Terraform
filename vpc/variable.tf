@@ -14,6 +14,7 @@ variable "vpc_cidr" {
 variable "env"{
     default = "dev"
 }
+
 variable "key_pair" {
     default = "rajmumbai"
 }
