@@ -8,8 +8,6 @@ variable "terraform-buckend" {
 variable "vpc_name" {
     default = "cbz-vpc"
 }
-
-}
 variable "instance_type"{
     default = "t2.micro"
 }
