@@ -5,3 +5,7 @@ terraform{
         key = "terraform.tfstate"
     }
 }
+
+provider "aws" {
+    region = "ap-south-1"
+}
