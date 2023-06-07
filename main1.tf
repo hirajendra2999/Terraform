@@ -57,6 +57,7 @@ variable  "tags" {
 output "demo" {
     value = "Hello World"
 }
-output "name" {
+output "public_ip" 
+{
     value = ""
 }
