@@ -13,7 +13,7 @@ provider "aws" {
 data "aws_security_group" "my_sg" {
     filter { 
         name ="vpc-id"
-        values = ["sg-0bcd5fa924b7d0ef0"]
+        values = ["sg-0b"]
      }
      filter { 
         name ="group-name"
