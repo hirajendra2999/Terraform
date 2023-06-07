@@ -57,4 +57,6 @@ variable  "tags" {
 output "demo" {
     value = "Hello World"
 }
-out
+output "name" {
+    value = ""
+}
