@@ -3,7 +3,7 @@ variable  "region" {
        default = "ap-south-1"
     }
 variable "terraform-buckend" {
-        bucket = "terraform-buckend-r271"
+        default = "terraform-buckend-r271"
         region = "ap-south-1"
   
 }
