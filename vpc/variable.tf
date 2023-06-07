@@ -2,6 +2,11 @@
 variable  "region" {
        default = "ap-south-1"
     }
+variable "" { backend "s3" {
+        bucket = "terraform-buckend-r271"
+        region = "ap-south-1"
+  
+}
 variable "instance_type"{
     default = "t2.micro"
 }
