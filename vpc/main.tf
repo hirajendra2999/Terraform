@@ -20,6 +20,6 @@ resource "aws_vpc" "my_vpc" {
   
 }
 
-resource "aws_subnet" "name" {
+resource "aws_subnet" "pri_" {
   
 }
