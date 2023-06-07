@@ -12,7 +12,7 @@ variable "vpc_cidr" {
     default = "10.10.0.0/16"
 }
 variable "env"{
-    default = "t2.micro"
+    default = "dev"
 }
 variable "key_pair" {
     default = "rajmumbai"
