@@ -58,5 +58,5 @@ output "demo" {
     value = "Hello World"
 }
 output "public_ip"{
-        value = "resource "aws_instance"  "my_instance"{"
+        value = aws_instancemy_instance"{"
 }
