@@ -13,7 +13,7 @@ provider "aws" {
 resource "aws_vpc" "my_vpc" {
     name = var.vpc_name
     cidr =  var.vpc_cidr
-    tags= {
+    tags = {
         name = var.name
         env = var.env
     }
