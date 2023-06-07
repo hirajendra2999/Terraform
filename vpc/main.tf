@@ -10,6 +10,6 @@ provider "aws" {
     region = var.region
 }
 
-resource "aws_vpv" "name" {
+resource "aws_vpc" "myname" {
   
 }
