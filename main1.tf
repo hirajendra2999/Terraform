@@ -57,3 +57,4 @@ variable  "tags" {
 output "demo" {
     value = "Hello World"
 }
+out
