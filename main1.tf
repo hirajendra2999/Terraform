@@ -10,28 +10,38 @@ provider "aws" {
     region = "ap-south-1"
 }
 
+data "aws_security_group" "my_sg" {
+    filter { 
+        name ="vpc-id"
+        values = ["sg-0bcd5fa924b7d0ef0"]
+     }
+     filter { 
+        name ="group-name"
+        values = ["default"]
+    }
+}
 resource "aws_instance"  "my_instance"{
     ami = var.ami_ids
     instance_type = var.instance_type
     key_name = var.key_pair
     tags = var.tags
-    vpc_security_group_ids = var.sg_ids
+    vpc_security_group_ids = [data.aws_security_groupvar.sg_ids]
 }
 
 variable  "region" {
     description = "please enter resion"
     default = "ap-south-1"
+    }
+variable "instance_type"{
+    default = "t2.micro"
 }
 variable "key_pair" {
     default = "rajmumbai"
 }
 variable "ami_ids" {
     default = "ami-0b08bfc6ff7069aff"
-}
-variable "instance_type"{
-    default = "t2.micro"
-}
 
+}
 variable  "tags" {
     type = map
     default= {
@@ -39,8 +49,11 @@ variable  "tags" {
         Name = "my-instance"
     }
 }
-variable  "sg_ids" {
-    type = list 
-    default = ["sg-0bcd5fa924b7d0ef0"]
-    
+#variable  "sg_ids" {
+#    type = list 
+#    default = ["sg-0bcd5fa924b7d0ef0"]
+# 
+#  }
+output "demo" {
+    value = "Hello World"
 }
