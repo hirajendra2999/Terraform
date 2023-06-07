@@ -15,7 +15,7 @@ variable "env"{
     default = "dev"
 }
 
-variable "key_pair" {
+variable "pri_sub_cidr" {
     default = "rajmumbai"
 }
 variable "ami_ids" {
