@@ -11,6 +11,7 @@ provider "aws" {
 }
 
 resource "aws_vpc" "my_vpc" {
-    name = var.vpc
+    name = var.vpc_name
+    
   
 }
