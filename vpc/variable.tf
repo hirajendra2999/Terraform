@@ -9,7 +9,9 @@ terraform{
 provider "aws" {
     region = var.region
 }
-
+resource "" "name" {
+  
+}
 
 variable  "region" {
     description = "please enter resion"
