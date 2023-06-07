@@ -9,7 +9,7 @@ variable "vpc_name" {
     default = "cbz-vpc"
     }
 variable "vpc_cidr" {
-    default = "10.cbz-vpc"
+    default = "10.10.0.0/16"
 }
 variable "instance_type"{
     default = "t2.micro"
