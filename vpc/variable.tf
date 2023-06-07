@@ -4,7 +4,7 @@ variable  "region" {
     }
 variable "terraform-buckend" {
         default = "terraform-buckend-r271"
-  
+          
 }
 variable "instance_type"{
     default = "t2.micro"
