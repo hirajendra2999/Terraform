@@ -84,7 +84,7 @@ egress {
     to_port = 0
     cidr_blocks = ["0.0.0.0/0"]
 }
-depends on = [
+depends_on = [
    aws_vpc.my_vpc
 ]
 
@@ -100,7 +100,7 @@ tags = {
     Name = "${var.project}-private-instance"
     env = var.env
 }
-depends on = [
+depends_on = [
     aws_security_group.sg1
 ]
 }
