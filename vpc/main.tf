@@ -24,7 +24,7 @@ resource "aws_subnet" "pri_subnet" {
     cidr_block = var.pri_sub_cidr
     availability_zone = var.az1
     tags = {
-        Name = ${var.project}bz-private-aws_subnet
+        Name = ${var.project}-private-aws_subnet
         env = var.env
     }  
 }
