@@ -101,8 +101,8 @@ tags = {
     env = var.env
 }
 #depends on = [
- #   aws_security_group.sg1
-#]
+    aws_security_group.sg1
+]
 }
 /*
 resource "aws_instance" "instance2" {
@@ -123,7 +123,8 @@ systemctl enable httpd
 echo "<h1> Hello World" > /var/www/html/index.html
 EOT
 }
-8
+*/
+
 
 
 
