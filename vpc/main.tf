@@ -104,7 +104,7 @@ tags = {
  #   aws_security_group.sg1
 #]
 }
-
+/*
 resource "aws_instance" "instance2" {
   ami = var.image_id
   instance_type = var.instance_type
@@ -123,7 +123,7 @@ systemctl enable httpd
 echo "<h1> Hello World" > /var/www/html/index.html
 EOT
 }
-
+8
 
 
 
