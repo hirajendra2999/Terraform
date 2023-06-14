@@ -93,7 +93,7 @@ depends_on = [
 resource "aws_instance" "instance1" {
   ami = var.image_id
   instance_type = var.instance_type
-  vpc_security_group_ids = [aws_vpc.my_vpc.default_security_group_id, aws_security_group.sg1.id]
+  vpc_security_group_ids = [aws_vpc.my_vpc.default_security_group_id, aws_security_group. sg1.id]
 subnet_id = aws_subnet.pri_subnet.id
 key_name = var.key_pair
 tags = {
