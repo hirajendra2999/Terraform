@@ -84,9 +84,9 @@ egress {
     to_port = 0
     cidr_blocks = ["0.0.0.0/0"]
 }
-depends on = [
-    aws_vpc.my_vpc
-]
+#depends on = [
+ #   aws_vpc.my_vpc
+#]
 
 }
 
