@@ -100,9 +100,9 @@ tags = {
     Name = "${var.project}-private-instance"
     env = var.env
 }
-depends on = [
-    aws_security_group.sg1
-]
+#depends on = [
+ #   aws_security_group.sg1
+#]
 }
 
 resource "aws_instance" "instance2" {
