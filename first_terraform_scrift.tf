@@ -54,11 +54,11 @@ variable  "tags" {
         Name = "my-instance"
     }
 }
-#variable  "sg_ids" {
-#    type = list 
-#    default = ["sg-0bcd5fa924b7d0ef0"]
-# 
-#  }
+variable  "sg_ids" {
+    type = list 
+   default = ["sg-0bcd5fa924b7d0ef0"]
+ 
+  }
 #output "demo" {
 #    value = "Hello World"
 #}
