@@ -5,7 +5,6 @@
         key = "terraform.tfstate"
     }
 }
-*/
 
 
 provider "aws" {
