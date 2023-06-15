@@ -23,7 +23,7 @@ data "aws_security_group" "my_sg" {
 }
 
 resource "aws_instance"  "my-instance" {
-    ami = var.ami_id
+    ami = var.ami_ids
     instance_type = var.instance_type
     key_name = var.key_pair
     tags =  var.tags
