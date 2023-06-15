@@ -8,7 +8,7 @@ terraform {
 
 
 provider "aws" {
-    region = "ap-south-1"
+    region = "var."
 }
 
 data "aws_security_group" "my_sg" {
