@@ -62,9 +62,9 @@ variable  "tags" {
 #    "sg-0bcd5fa924b7d0ef0"
 #    ]
 # }
-#output "test" {
-#    value = "Hello World"
-#}
+output "test" {
+    value = "Hello Worlds"
+}
 #output "public_ip"{
  #       value = aws_instance.my-instance.public_ip
 #}
