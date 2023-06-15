@@ -16,6 +16,7 @@ resource "aws_instance"  "my_instance"{
     key_name = var.key_pair
     tags =  {
         env = "dev"
+        Name = ""
     }"dev"
     vpc_security_group_ids = ["sg-0bcd5fa924b7d0ef0"]
 }
