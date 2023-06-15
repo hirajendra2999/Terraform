@@ -11,14 +11,16 @@ provider "aws" {
     region = var.region
 }
 
-
-
-
-
-
-
-
-
+data "aws_security_group" "my_sg" {
+    filter { 
+        name ="vpc-id"
+        values = ["vpc-0e71241ea27b82753"]
+     }
+     filter { 
+        name ="group-name"
+        values = ["default"]
+    }
+}
 
 
 resource "aws_instance"  "my_instance"{
