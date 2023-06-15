@@ -11,7 +11,7 @@ provider "aws" {
     region = var.region
 }
 
-data "aws_security_group" "my_sg" {
+data "aws_security_group" "launch-wizard-2" {
     filter { 
         name ="vpc-id"
         values = ["vpc-0e71241ea27b82753"]
@@ -27,7 +27,7 @@ resource "aws_instance"  "my-instance"{
     instance_type = var.instance_type
     key_name = var.key_pair
     tags =  var.tags
-   vpc_security_group_ids = [data.aws_security_group.my_sg]
+   vpc_security_group_ids = [data.aws_security_group.launch-wizard-2]
 }
 
 variable  "region" {
