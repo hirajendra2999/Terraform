@@ -59,9 +59,9 @@ variable  "tags" {
 #variable  "sg_ids" {
 #    type = list 
 #    default = [
-    "sg-0bcd5fa924b7d0ef0"
-    ]
- }
+ #   "sg-0bcd5fa924b7d0ef0"
+ #   ]
+# }
 output "test" {
     value = "Hello Worlds"
 }
