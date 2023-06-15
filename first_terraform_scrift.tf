@@ -11,7 +11,7 @@ provider "aws" {
     region = var.region
 }
 
-data "aws_security_group" "launch-wizard-2" {
+data "aws_security_group" "my_sg" {
     filter { 
         name ="vpc-id"
         values = ["vpc-0e71241ea27b82753"]
