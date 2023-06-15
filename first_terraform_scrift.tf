@@ -9,7 +9,7 @@ terraform {
 
 provider "aws" {
     region = var.region
-
+}
 resource "aws_instance"  "my_instance"{
     ami = var.ami_ids
     instance_type = var.instance_type
