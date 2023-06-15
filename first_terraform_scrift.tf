@@ -62,7 +62,7 @@ variable  "tags" {
 #    "sg-0bcd5fa924b7d0ef0"
 #    ]
 # }
-#output "demo" {
+#output "test" {
 #    value = "Hello World"
 #}
 #output "public_ip"{
