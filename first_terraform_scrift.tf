@@ -36,7 +36,7 @@ variable  "region" {
     }
 
 variable "instance_type"{
-    description = 
+    description = "instance type"
     default = "t2.micro"
 }
 
