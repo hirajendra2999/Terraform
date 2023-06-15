@@ -15,7 +15,7 @@ resource "aws_instance"  "my_instance"{
     instance_type = var.instance_type
     key_name = var.key_pair
     tags = var.tags
-    vpc_security_group_ids = [sg-0bcd5fa924b7d0ef0"]
+    vpc_security_group_ids = ["sg-0bcd5fa924b7d0ef0"]
 }
 
 variable  "region" {
