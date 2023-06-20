@@ -85,7 +85,7 @@ resource "aws_security_group" "sg1" {
     cidr_blocks = ["0.0.0.0/0"]
   }
   depends_on = [ 
-    aws_vpc.aws_vpc.my_vpc
+    aws_vpc.my_vpc
  ]
 }
 
