@@ -28,8 +28,6 @@ resource "aws_subnet" "pub_subnet" {
   map_public_ip_on_launch = true
 }
 
-
-
 resource "aws_internet_gateway" "my_igw" {
   vpc_id = aws_vpc.my_vpc.id
   tags = {
