@@ -42,5 +42,5 @@ variable "image_id" {
     default = "ami-0b08bfc6ff7069aff"  
 }
 variable "instance_type" {
-  default = 
+  default = "t2.micro"
 }
