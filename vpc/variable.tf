@@ -35,7 +35,7 @@ variable "project" {
 }
 
 variable "pub_sub_cidr" {
-    default = "10.0.16.0/20"
+    default = "10.10.16.0/20"
 } 
 
 variable "image_id" {
