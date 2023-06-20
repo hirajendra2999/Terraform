@@ -24,3 +24,23 @@ resource "aws_subnet" "pub_subnet" {
   }
   map_public_ip_on_launch = true
 }
+
+resource "aws_internet_gateway" "my_igw" {
+  vpc_id = aws_vpc.my_vpc.id
+  tags = {
+    Name = "${var.project}-igw"
+    env = var.env
+  }
+}
+
+resource "aws_default_route_table" "main_rt" {
+  default_route_table_id = aws_vpc.my_vpc.default_route_table_id
+  route {
+    cidr_block = "0.0.0.0/0"
+    gateway_id = aws_internet_gateway.my_igw.id
+  }
+  tags = {
+    Name = "${var.project}-rt"
+    env = var.env
+  }
+}
