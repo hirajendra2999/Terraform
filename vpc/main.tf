@@ -61,7 +61,7 @@ resource "aws_default_route_table" "main_rt" {
 
 resource "aws_security_group" "sg1" {
   Name = "${var.project}-sg"
-    env = var.env
+  vpc  env = var.env
 }
 
 resource "aws_instance" "instance1" {
