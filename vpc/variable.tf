@@ -3,11 +3,11 @@ variable  "region" {
     }
 
 variable "az1" {
-  default = "ap-south-1"
+  default = "ap-south-1a"
 }
 
 variable "az2" {
-  default = "ap-south-1"
+  default = "ap-south-1b"
 }
 
 variable "terraform-buckend" {
