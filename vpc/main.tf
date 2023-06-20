@@ -36,6 +36,7 @@ resource "aws_subnet" "pub_subnet" {
         Name = "${var.project}-public-subnet"
         env = var.env
     }
+    map_public_ip_on_launch = true
 }
 
-map_public_ip_on_lanch
+
