@@ -33,6 +33,10 @@ variable "project" {
   default = "cbz"
 }
 
+variable "pri_sub_cidr" {
+    default = "10.0.0.0/20"
+}
+
 variable "subnet_name" {
 defdefault = "cbz-private-subnet"  
 }
