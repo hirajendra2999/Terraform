@@ -38,6 +38,6 @@ variable "pub_sub_cidr" {
     default = "10.0.16.0/20"
 } 
 
-variable "image" {
+variable "image_id" {
 defdefault = "cbz-private-subnet"  
 }
