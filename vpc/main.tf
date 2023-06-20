@@ -111,4 +111,5 @@ user_data = #!/bin/bash
 yum install httpd -y
 systemctl start httpd
 systemctl enable httpd
+echo "<h1>
 }
