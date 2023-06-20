@@ -15,7 +15,7 @@ resource "aws_subnet" "pri_subnet" {
   }
 }
 
-resource "aws_subnet" "main" {
+resource "aws_subnet" "pub" {
   vpc_id = aws_vpc.my_vpc.id
   cidr_block = "10.10.16.0/20"
   tags = { 
