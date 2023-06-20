@@ -39,5 +39,5 @@ variable "pub_sub_cidr" {
 } 
 
 variable "image_id" {
-defdefault = "ami-0b08bfc6ff7069aff"  
+    default = "ami-0b08bfc6ff7069aff"  
 }
