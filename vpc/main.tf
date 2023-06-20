@@ -59,7 +59,7 @@ resource "aws_default_route_table" "main_rt" {
   }
 }
 
-resource "aws_security_group" "instance1" {
+resource "aws_security_group" "sg1" {
   ami = var.image_id
   instance_type = var.instance_type
   vpc_security_group_ids = [aws_vpc.my_vpc.default_security_group_id]
