@@ -54,6 +54,7 @@ resource "aws_default_route_table" "main_rt" {
     gateway_id = aws_internet_gateway.my_igw.id
   }
   tags = {
-    Name
+    Name = "${var.project}-rt"
+    
   }
 }
