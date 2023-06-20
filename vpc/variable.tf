@@ -9,10 +9,11 @@ variable "terraform-buckend" {
 variable "vpc_name" {
     default = "cbz-vpc"
     }
-    
+
 variable "vpc_cidr" {
     default = "10.10.0.0/16"
 }
+
 variable "env"{
     default = "dev"
 }
@@ -20,6 +21,7 @@ variable "env"{
 variable "pri_sub_cidr" {
     default = "rajmumbai"
 }
+
 variable "ami_ids" {
     default = "ami-0b08bfc6ff7069aff"
 
