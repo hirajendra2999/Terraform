@@ -30,7 +30,7 @@ resource "aws_subnet" "pri_subnet" {
 
 resource "aws_subnet" "pub_subnet" {
     vpc_id = aws_vpc.my_vpc.id
-    cidr_block = var.pri_sub_cidr
+    cidr_block = var.pub_sub_cidr
     availability_zone = var.az1
     tags = {
         Name = "${var.project}-private-subnet"
