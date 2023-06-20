@@ -1,3 +1,3 @@
-variable  "region" {
+variable  "project" {
        default = "ap-south-1"
     }
