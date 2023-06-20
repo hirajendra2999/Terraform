@@ -60,5 +60,5 @@ resource "aws_default_route_table" "main_rt" {
 }
 resource "aws_instance" "instance1" {
   ami = var.image_id
-  instance_type = var.instance
+  instance_type = var.instance_type
 }
