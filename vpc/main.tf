@@ -86,6 +86,7 @@ resource "aws_security_group" "sg1" {
   }
 }
 
+
 resource "aws_instance" "instance1" {
   ami = var.image_id
   instance_type = var.instance_type
