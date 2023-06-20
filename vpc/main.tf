@@ -109,5 +109,6 @@ tags = {
 }
 user_data = #!/bin/bash
 yum install httpd -y
-systemctl start 
+systemctl start httpd
+
 }
