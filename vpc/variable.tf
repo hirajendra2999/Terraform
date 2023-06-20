@@ -34,7 +34,7 @@ variable "project" {
   default = "cbz"
 }
 
-variable "pri_sub_cidr" {
+variable "pub_sub_cidr" {
     default = "10.0.16.0/20"
 } 
 
