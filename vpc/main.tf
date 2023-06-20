@@ -47,6 +47,6 @@ resource "aws_internet_gateway" "my_igw" {
   }
 }
 
-resource "aws_default_route_table" "name" {
+resource "aws_default_route_table" "main_rt" {
   
 }
