@@ -25,8 +25,8 @@ variable "env"{
 variable "pri_sub_cidr" {
     default = "10.0.0.0/20"
 }
-variable "proje" {
-  
+variable "project" {
+  default = 
 }
 
 variable "subnet_name" {
