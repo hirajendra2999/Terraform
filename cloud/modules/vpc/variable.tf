@@ -1,4 +1,2 @@
 variable  "project" {}
-variable "" {
-  
-}
+variable "vpc_cidr" {}
