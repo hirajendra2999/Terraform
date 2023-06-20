@@ -65,7 +65,8 @@ resource "aws_security_group" "sg1" {
   description = "Allow http service"
 
   ingress {
-    
+    protocol = "TCP"
+    from_
   }
 }
 
