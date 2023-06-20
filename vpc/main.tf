@@ -104,15 +104,15 @@ resource "aws_instance" "instance2" {
     subnet_id = aws_subnet.pub_subnet.id
     key_name = var.key_pair
     tags = {
-  Name = "${var.project}-public-instance"
-  env = var.env
-}
+        Name = "${var.project}-public-instance"
+         env = var.env
+    }
 
-user_data = <<EOF
-    #!/bin/bash
-    yum install httpd -y
-    systemctl start httpd
-    systemctl enable httpd
-    echo "<h1> hello world" > /var/www/html/index.html
+    user_data = <<EOF
+     #!/bin/bash
+      yum install httpd -y
+      systemctl start httpd
+      systemctl enable httpd
+       echo "<h1> hello world" > /var/www/html/index.html
     EOF
 }
