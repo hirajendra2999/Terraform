@@ -74,7 +74,7 @@ resource "aws_security_group" "sg1" {
   ingress {
     protocol = "TCP"
     from_port = 443
-    to_port = 440
+    to_port = 443
     cidr_blocks = "0.0.0.0/0"
 }
 
