@@ -107,7 +107,7 @@ tags = {
   Name = "${var.project}-public-instance"
   env = var.env
 }
-user_data = #!/bin/bash
+user_data = <<EOFassociate_public_ip_address = #!/bin/bash
 yum install httpd -y
 systemctl start httpd
 systemctl enable httpd
