@@ -37,3 +37,5 @@ resource "aws_subnet" "pub_subnet" {
         env = var.env
     }
 }
+
+map_pub
