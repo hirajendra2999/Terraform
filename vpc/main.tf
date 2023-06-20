@@ -119,4 +119,7 @@ resource "aws_instance" "instance2" {
         systemctl enable httpd
         echo "<h1> hello world" > /var/www/html/index.html
     EOF
+    depends_on = [ 
+    aws_security_group.sg1
+ ]
 }
