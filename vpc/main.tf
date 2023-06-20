@@ -41,5 +41,7 @@ resource "aws_subnet" "pub_subnet" {
 
 resource "aws_internet_gateway" "my_igw" {
   vpc_id = aws_vpc.my_vpc.id
-  t
+  tags = {
+    Name = 
+  }
 }
