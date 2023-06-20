@@ -33,7 +33,7 @@ resource "aws_subnet" "pub_subnet" {
     cidr_block = var.pub_sub_cidr
     availability_zone = var.az1
     tags = {
-        Name = "${var.project}-private-subnet"
+        Name = "${var.project}-public-subnet"
         env = var.env
     }
 }
