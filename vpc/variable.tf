@@ -27,7 +27,7 @@ variable "pri_sub_cidr" {
 }
 
 variable "subnet_name" {
-defdefault = "cbz-"  
+defdefault = "cbz-private-subnet"  
 }
 
 variable "ami_ids" {
