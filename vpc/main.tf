@@ -58,6 +58,6 @@ resource "aws_default_route_table" "main_rt" {
     env = var.env
   }
 }
-resource "aws_instance" "instancename" {
-  
+resource "aws_instance" "instance1" {
+  ami = 
 }
