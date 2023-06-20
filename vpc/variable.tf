@@ -23,7 +23,7 @@ variable "env"{
 }
 
 variable "pri_sub_cidr" {
-    default = "rajmumbai"
+    default = "10.0.0.0/20"
 }
 
 variable "ami_ids" {
