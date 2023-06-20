@@ -4,6 +4,6 @@ resource "aws_instance" "foo" {
  vpc_security_group_ids = var.sg_ids
 key_name = var.key_pair
 tags = {
-    Name = 
+    Name = "${}"
 }
 }
