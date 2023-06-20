@@ -66,7 +66,7 @@ resource "aws_security_group" "sg1" {
 
   ingress {
     protocol = "TCP"
-    from_
+    from_port = 80
   }
 }
 
