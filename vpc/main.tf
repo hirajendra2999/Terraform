@@ -38,4 +38,4 @@ resource "aws_subnet" "pub_subnet" {
     }
 }
 
-map_pub
+map_public_ip on _lanch
