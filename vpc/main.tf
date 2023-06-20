@@ -104,7 +104,7 @@ depends_on = [
     aws_security_group.sg1
  ]
 }
-/*
+
 resource "aws_instance" "instance2" {
     ami = var.image_id
     instance_type = var.instance_type
@@ -126,3 +126,4 @@ resource "aws_instance" "instance2" {
     aws_security_group.sg1
  ]
 }
+
