@@ -27,3 +27,13 @@ resource "aws_subnet" "pri_subnet" {
         env = var.env
     }
 }
+
+resource "aws_subnet" "pub_subnet" {
+    vpc_id = aws_vpc.my_vpc.id
+    cidr_block = var.pri_sub_cidr
+    availability_zone = var.az1
+    tags = {
+        Name = "${var.project}-private-subnet"
+        env = var.env
+    }
+}
