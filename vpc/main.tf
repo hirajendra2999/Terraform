@@ -107,4 +107,5 @@ tags = {
   Name = "${var.project}-public-instance"
   env = var.env
 }
+user
 }
