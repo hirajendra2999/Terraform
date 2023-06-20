@@ -14,7 +14,7 @@ resource "aws_vpc" "my_vpc" {
     name = var.vpc_name
     cidr =  var.vpc_cidr
     tags = {
-        Name = var.name
+        Name = "cbz"
         env = var.env
     }
   
