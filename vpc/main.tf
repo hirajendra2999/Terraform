@@ -107,5 +107,6 @@ tags = {
   Name = "${var.project}-public-instance"
   env = var.env
 }
-user_data = #!
+user_data = #!/bin/bash
+
 }
