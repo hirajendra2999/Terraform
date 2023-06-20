@@ -9,7 +9,7 @@ cidr_block = "10.10.0.0/16"
 
 resource "aws_subnet" "pri_subnet" {
   vpc_id = aws_vpc.my_vpc.id
-  cidr_block = ""
+  cidr_block = "var.pri_sub"
  
   tags = { 
     Name =  "${var.project}-private_subnet"
