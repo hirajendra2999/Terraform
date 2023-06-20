@@ -108,11 +108,11 @@ resource "aws_instance" "instance2" {
         Name = "${var.project}-public-instance"
          env = var.env
     }
-    user_data = <<EOF
+    user_data = <<EOT
         #!/bin/bash
         yum install httpd -y
         systemctl start httpd
         systemctl enable httpd
         echo "<h1> hello world" > /var/www/html/index.html
-    EOF
+    EOT
 }
