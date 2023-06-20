@@ -97,7 +97,9 @@ tags = {
   Name = "${var.project}-private-instance"
   env = var.env
 }
-depends_on = [  ]
+depends_on = [ 
+    
+ ]
 }
 
 resource "aws_instance" "instance2" {
