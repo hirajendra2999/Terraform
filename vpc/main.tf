@@ -97,6 +97,7 @@ tags = {
   env = var.env
 }
 }
+
 resource "aws_instance" "instance2" {
     ami = var.image_id
     instance_type = var.instance_type
