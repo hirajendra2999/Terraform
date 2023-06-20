@@ -42,7 +42,7 @@ variable "subnet_name" {
 defdefault = "cbz-private-subnet"  
 }
 
-variable "ami_ids" {
+/Pvariable "ami_ids" {
     default = "ami-0b08bfc6ff7069aff"
 
 }
