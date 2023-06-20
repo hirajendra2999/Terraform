@@ -1,3 +1,3 @@
-resource "aws_vpc" "name" {
-  
+resource "aws_vpc" "my_vpc" {
+  tag
 }
