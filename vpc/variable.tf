@@ -6,6 +6,7 @@ variable  "region" {
 variable "terraform-buckend" {
         default = "terraform-buckend-r271"
 }
+
 variable "vpc_name" {
     default = "cbz-vpc"
     }
