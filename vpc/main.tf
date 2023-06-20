@@ -98,7 +98,7 @@ tags = {
   env = var.env
 }
 depends_on = [ 
-    
+    aws_security_group.sg1
  ]
 }
 
