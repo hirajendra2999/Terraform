@@ -46,3 +46,7 @@ resource "aws_internet_gateway" "my_igw" {
     env = var.env
   }
 }
+
+resource "" "name" {
+  
+}
