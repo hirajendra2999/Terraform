@@ -93,6 +93,6 @@ resource "aws_instance" "instance1" {
 subnet_id = aws_subnet.pri_subnet.id
 key_name = var.key_pair
 tags = {
-  Name = 
+  Name = "${var.project}-pri"
 }
 }
