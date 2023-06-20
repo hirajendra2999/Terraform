@@ -26,6 +26,8 @@ variable "pri_sub_cidr" {
     default = "10.0.0.0/20"
 }
 
+v
+
 variable "ami_ids" {
     default = "ami-0b08bfc6ff7069aff"
 
