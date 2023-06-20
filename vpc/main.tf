@@ -60,7 +60,7 @@ resource "aws_default_route_table" "main_rt" {
 }
 
 resource "aws_security_group" "sg1" {
-  Name = "${var.project}-sg"
+  name = "${var.project}-sg"
   vpc_id = aws_vpc.my_vpc.id
   description = "Allow http service"
 
