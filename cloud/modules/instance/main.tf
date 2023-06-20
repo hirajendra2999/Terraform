@@ -1,3 +1,3 @@
 resource "aws_instance" "foo" {
- ami = var 
+ ami = var.image_id 
 }
