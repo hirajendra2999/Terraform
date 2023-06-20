@@ -94,6 +94,6 @@ subnet_id = aws_subnet.pri_subnet.id
 key_name = var.key_pair
 tags = {
   Name = "${var.project}-private-instance"
-  env
+  env = var.env
 }
 }
