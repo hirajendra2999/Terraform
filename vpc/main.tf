@@ -58,3 +58,6 @@ resource "aws_default_route_table" "main_rt" {
     env = var.env
   }
 }
+resource "aws""" "name" {
+  
+}
