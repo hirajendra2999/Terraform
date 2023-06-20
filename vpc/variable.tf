@@ -6,6 +6,10 @@ variable "az1" {
   default = "ap-south-1"
 }
 
+variable "az2" {
+  default = "ap-south-1"
+}
+
 variable "terraform-buckend" {
         default = "terraform-buckend-r271"
 }
