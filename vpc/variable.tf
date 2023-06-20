@@ -3,7 +3,7 @@ variable  "region" {
     }
 
 variable "az1" {
-  
+  default = ""
 }
 variable "terraform-buckend" {
         default = "terraform-buckend-r271"
