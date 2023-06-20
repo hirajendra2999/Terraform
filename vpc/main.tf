@@ -58,6 +58,13 @@ resource "aws_default_route_table" "main_rt" {
     env = var.env
   }
 }
+
+resource "aws_instance" "instance1" {
+  ami = var.image_id
+  instance_type = var.instance_type
+  vpc_security_group_ids = [aws_vpc.my_vpc.default_security_group_id]
+}
+
 resource "aws_instance" "instance1" {
   ami = var.image_id
   instance_type = var.instance_type
