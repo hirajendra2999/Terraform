@@ -15,8 +15,7 @@ resource "aws_vpc" "my_vpc" {
     tags = {
         Name = "${var.project}-vpc"
         env = var.env
-    }
-  
+    }  
 }
 
 resource "aws_subnet" "pri_subnet" {
