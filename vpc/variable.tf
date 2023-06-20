@@ -41,15 +41,3 @@ variable "pub_sub_cidr" {
 variable "subnet_name" {
 defdefault = "cbz-private-subnet"  
 }
-
-/*Pvariable "ami_ids" {
-    default = "ami-0b08bfc6ff7069aff"
-
-}
-variable  "tags" {
-    type = map
-    default= {
-        env="dev"
-        Name = "my-instance"
-    }
-}*/
