@@ -19,7 +19,7 @@ resource "aws_subnet" "pub_subnet" {
   vpc_id = aws_vpc.my_vpc.id
   cidr_block = "10.10.0.0/20"
   tags = { 
-    Name =  "${var.project}-private_subnet"
+    Name =  "${var.project}-public_subnet"
     env = var.env
   }
 }
