@@ -8,9 +8,9 @@ cidr_block = "10.10.0.0/16"
 
 resource "aws_subnet" "main" {
   vpc_id = aws_vpc.my_vpc.id
-  cidr_block = "10.10.1.0/24"
+  cidr_block = "10.10.16.0/20"
   tags = { 
-    Name =  "${var.project}-vpc"
+    Name =  "${var.project}-"
     env = var.env
   }
 }
