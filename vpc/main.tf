@@ -63,6 +63,7 @@ resource "aws_security_group" "sg1" {
   Name = "${var.project}-sg"
   vpc_id = aws_vpc.my_vpc.id
   description = "Allow http service"
+  
 }
 
 resource "aws_instance" "instance1" {
