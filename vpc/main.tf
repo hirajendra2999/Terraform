@@ -86,13 +86,6 @@ resource "aws_security_group" "sg1" {
   }
 }
 
-  egress {
-    protocol = "TCP"
-    from_port = 443
-    to_port = 443
-    cidr_blocks = "0.0.0.0/0"
-}
-
 resource "aws_instance" "instance1" {
   ami = var.image_id
   instance_type = var.instance_type
