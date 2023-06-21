@@ -15,5 +15,5 @@ resource "aws_vpc_module"  {
    project = var.project
    vpc_cidr = var.vpc_cidr
    env = var.environment
-   pri
+   pri_sub_cidr
 }
