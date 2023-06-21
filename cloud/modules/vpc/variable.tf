@@ -1,9 +1,9 @@
-variable  "project" {}
+variable  "count" {}
 variable "vpc_cidr" {}
 variable "env" {}
 variable "pri_sub_cidr" {}
 variable "pub_sub_cidr" {}
-variable  "env" {}
+variable  "project" {}
 variable "vpc_cidr" {}
 variable "env" {}
 variable "pri_sub_cidr" {}
