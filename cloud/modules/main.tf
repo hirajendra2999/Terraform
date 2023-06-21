@@ -23,8 +23,7 @@ resource "aws_security_group" "my_sg" {
     name = "${var.project}-sg"
     vpc_id = module
     description = "allow http and https service"
-        source = ""
-        
+       
     }
     
   
