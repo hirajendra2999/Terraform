@@ -1,5 +1,5 @@
 variable  "count" {}
-variable "vpc_cidr" {}
+variable "image_id" {}
 variable "env" {}
 variable "pri_sub_cidr" {}
 variable "pub_sub_cidr" {}
