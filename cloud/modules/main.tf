@@ -18,3 +18,7 @@ resource "aws_vpc_module"  {
    pri_sub_cidr = var.private_cidr
    pub_sub_cidr = var.public_cidr
 }
+
+module "name" {
+  
+}
