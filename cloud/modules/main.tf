@@ -31,7 +31,7 @@ module "my_instance" {
   sg_ids =
   }
 
-module "my_instance" {
+module "my_instance_private" {
   source = "./modules/instance"
   count = var.count
   image_id = var.image_id
