@@ -29,6 +29,6 @@ variable "instance_type" {
     default = "10.10.0.0/20"
 }
 
-variable "public_cidr" {
+variable "key_pair" {
     default = "10.10.16.0/20"
 }
