@@ -23,7 +23,7 @@ variable "count" {
 }
 
 variable "image_id"{
-    default = 
+    default = "ami-0b08bfc6ff7069aff"
 }
 
 variable "instance_type" {
