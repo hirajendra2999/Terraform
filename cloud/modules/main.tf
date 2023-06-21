@@ -20,7 +20,7 @@ resource "aws_vpc_module"  {
 }
 
 resource "aws_security_group" "my_sg" {
-    
+    name = "${}"
   
 }
 
