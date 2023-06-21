@@ -28,7 +28,7 @@ module "my_instance" {
   project = var.project
   env = var.environment
   subnet_id = module.my_vpc_module.pub
-  subnet_id = module.my
+  subnet_id = module.my_vpc_module
     source = ""
     
   }
