@@ -20,6 +20,7 @@ variable "public_cidr" {
 
 variable "count" {
     default = 2
+}
 
 variable "image_id"{
     default = 
