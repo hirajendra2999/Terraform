@@ -45,7 +45,7 @@ resource "aws_security_group" "my_sg" {
     cidr_blocks = ["0.0.0.0/0"]
   }
   depends_on = [ 
-    module.my_vpc
+    module.my_vpc_module
  ]
 }   
 }
