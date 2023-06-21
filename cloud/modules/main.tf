@@ -24,11 +24,8 @@ resource "aws_security_group" "my_sg" {
     vpc_id = module
     description = "allow http and https service"
        
-    }
-    
-  
 }
-
+    
 module "my_instance" {
   source = "./modules/instance"
   count = var.count
