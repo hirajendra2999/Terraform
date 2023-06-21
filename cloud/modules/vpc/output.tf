@@ -7,5 +7,5 @@ output "pub_subnet_id" {
 }
 
 output "vpc_id" {
-  values = aws__vpc.my_vpc.id
+  values = aws_vpc.my_vpc.id
 }
