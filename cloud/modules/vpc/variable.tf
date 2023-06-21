@@ -5,4 +5,6 @@ variable "key_pair" {}
 variable  "project" {}
 variable "env" {}
 variable "subnet_id" {}
-variable "sg_ids" {}
+variable "sg_ids" {
+    type = list
+}
