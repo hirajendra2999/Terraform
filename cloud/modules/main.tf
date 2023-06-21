@@ -10,7 +10,7 @@ provider "aws" {
     region = var.region
 }
 
-resource "aws_vpc_moduls" "my_vpc" {
+resource "aws_vpc_module"  {
     cidr_block = var.vpc_cidr
     tags = {
         Name = "${var.project}-vpc"
