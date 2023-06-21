@@ -6,6 +6,6 @@ output "pub_subnet_id" {
   values = aws_subnet.pub_subnet.id
 }
 
-output "pub_subnet_id" {
+output "vpc_id" {
   values = aws_subnet.pub_subnet.id
 }
