@@ -3,7 +3,7 @@ variable "project" {
     }
 
 variable "region" {
-    default = "10.10.0.0/16"
+    default = "apsouth-1"
 }
 
 variable "vpc_cidr" {
