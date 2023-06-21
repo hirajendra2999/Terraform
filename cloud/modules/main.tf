@@ -40,5 +40,5 @@ module "my_instance" {
 #  env = var.environment
 #  subnet_id = module.my_vpc_module.pub
 #  subnet_id = module.my_vpc_module.pub_sub
- #  sg_ids =
- #  }
+#  sg_ids =
+#  }
