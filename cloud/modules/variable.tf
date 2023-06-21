@@ -1,5 +1,5 @@
 variable "project" {
-    default = "cbz-vpc"
+    default = "cloud"
     }
 
 variable "vpc_cidr" {
