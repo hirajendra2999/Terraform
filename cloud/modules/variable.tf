@@ -30,5 +30,5 @@ variable "instance_type" {
 }
 
 variable "key_pair" {
-    default = "10.10.16.0/20"
+    default = "rajmumbai"
 }
