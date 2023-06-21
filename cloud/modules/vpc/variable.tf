@@ -5,4 +5,4 @@ variable "key_pair" {}
 variable  "project" {}
 variable "env" {}
 variable "subnet_id" {}
-variable "pub_sub_cidr" {}
+variable "sg_ids" {}
