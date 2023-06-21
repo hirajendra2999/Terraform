@@ -24,5 +24,5 @@ module "my_instance" {
   count = var.count
   image_id = var.image_id
   instance_type = var.instance_type
-  keypair
+  key_pair = var.key_pair
 }
