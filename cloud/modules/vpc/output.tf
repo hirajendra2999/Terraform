@@ -1,7 +1,7 @@
-output "subnet_id" {
+output "pri_subnet_id" {
   values = aws_subnet.pri_subnet.sg_id
 }
 
-output "subnet_id" {
+output "pub_subnet_id" {
   values = aws_subnet.pri_subnet.sg_id
 }
