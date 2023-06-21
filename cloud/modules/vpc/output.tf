@@ -1,3 +1,3 @@
 output "subnet_id" {
-  valu
+  values = 
 }
