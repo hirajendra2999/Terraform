@@ -22,7 +22,7 @@ resource "aws_vpc_module"  {
 resource "aws_security_group" "my_sg" {
     name = "${var.project}-sg"
     vpc_id = aws_vpc.my_vpc.id
-    description = "allow http and "
+    description = "allow http and https"
   
 }
 
