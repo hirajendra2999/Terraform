@@ -27,4 +27,5 @@ module "my_instance" {
   key_pair = var.key_pair
   project = var.project
   env = var.environment
+  subnet
 }
