@@ -48,7 +48,6 @@ resource "aws_security_group" "my_sg" {
     module.my_vpc_module
  ]
 }   
-}
     
 module "my_instance" {
   source = "./modules/instance"
