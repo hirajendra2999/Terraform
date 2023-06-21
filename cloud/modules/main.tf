@@ -23,7 +23,8 @@ resource "aws_security_group" "my_sg" {
     name = "${var.project}-sg"
     vpc_id = module
     description = "allow http and https service"
-ingress {
+  
+  ingress {
     protocol = "TCP"
     from_port = 80
     to_port = 80
