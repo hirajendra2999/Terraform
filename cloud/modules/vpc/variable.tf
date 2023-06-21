@@ -4,5 +4,5 @@ variable "instance_type" {}
 variable "key_pair" {}
 variable  "project" {}
 variable "env" {}
-variable "pri_sub_cidr" {}
+variable "subnet_id" {}
 variable "pub_sub_cidr" {}
