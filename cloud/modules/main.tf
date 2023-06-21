@@ -20,5 +20,5 @@ resource "aws_vpc_module"  {
 }
 
 module "my_instance" {
-  source = "value"
+  source = "./modules/"
 }
