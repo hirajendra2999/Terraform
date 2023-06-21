@@ -25,7 +25,7 @@ variable "image_id"{
     default = 
 }
 
-variable "private_cidr" {
+variable "instance_type" {
     default = "10.10.0.0/20"
 }
 
