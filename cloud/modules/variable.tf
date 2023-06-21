@@ -1,5 +1,5 @@
 variable "project" {
-    default = "cloud"
+    default = "cloudblitz"
     }
 
 variable "vpc_cidr" {
