@@ -31,14 +31,4 @@ module "my_instance" {
   sg_ids =
   }
 
-module "my_instance_private" {
-  source = "./modules/instance"
-  count = var.count
-  image_id = var.image_id
-  instance_type = var.instance_type
-  key_pair = var.key_pair
-  project = var.project
-  env = var.environment
-  subnet_id = module.my_vpc_module.pri_sub
-  sg_ids =
-  }
+#
