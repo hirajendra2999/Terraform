@@ -32,7 +32,7 @@ module "my_instance" {
   }
 
 # module "my_instance" {
-  source = "./modules/instance"
+#  source = "./modules/instance"
   count = var.count
   image_id = var.image_id
   instance_type = var.instance_type
