@@ -19,7 +19,9 @@ resource "aws_vpc_module"  {
    pub_sub_cidr = var.public_cidr
 }
 
-
+resource "aws_secu" "name" {
+  
+}
 
 module "my_instance" {
   source = "./modules/instance"
