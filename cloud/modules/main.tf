@@ -22,5 +22,5 @@ resource "aws_vpc_module"  {
 module "my_instance" {
   source = "./modules/instance"
   count = var.count
-  image_id
+  image_id = var.image
 }
