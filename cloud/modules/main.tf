@@ -31,3 +31,4 @@ module "my_instance" {
   subnet_id = module.my_vpc_module.pub_sub
   sg_ids =
   }
+  
