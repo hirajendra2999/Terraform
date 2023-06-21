@@ -19,7 +19,7 @@ resource "aws_vpc_module"  {
    pub_sub_cidr = var.public_cidr
 }
 
-resource "aws_security_group" "name" {
+resource "aws_security_group" "my_sg" {
   
 }
 
