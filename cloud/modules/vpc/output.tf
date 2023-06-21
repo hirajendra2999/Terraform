@@ -1,3 +1,3 @@
 output "subnet_id" {
-  values = 
+  values = aws_subnet.pri_sub
 }
