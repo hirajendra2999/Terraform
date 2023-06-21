@@ -18,7 +18,7 @@ variable "public_cidr" {
     default = "10.10.16.0/20"
 }
 
-variable "vpc_cidr" {
+variable "count" {
     default = "10.10.0.0/16"
 }
 
