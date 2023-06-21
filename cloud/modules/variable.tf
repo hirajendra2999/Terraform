@@ -1,6 +1,4 @@
-}
-
-variable "vpc_name" {
+variable "project" {
     default = "cbz-vpc"
     }
 
