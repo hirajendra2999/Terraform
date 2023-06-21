@@ -39,6 +39,6 @@ module "my_instance_private" {
   key_pair = var.key_pair
   project = var.project
   env = var.environment
-  subnet_id = module.my_vpc_module.pub_sub
+  subnet_id = module.my_vpc_module.pri_sub
   sg_ids =
   }
