@@ -12,5 +12,5 @@ provider "aws" {
 
 resource "aws_vpc_module"  {
    source = "./modules/vpc"
-   project = 
+   project = var.project
 }
