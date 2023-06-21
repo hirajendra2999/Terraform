@@ -1,4 +1,4 @@
-resource "aws_instance" "foo" {
+resource "aws_instance" "my_ {
  ami = var.image_id
  instance_type = var.instance_type
  vpc_security_group_ids = var.sg_ids
