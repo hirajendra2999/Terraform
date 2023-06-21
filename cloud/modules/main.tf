@@ -11,9 +11,5 @@ provider "aws" {
 }
 
 resource "aws_vpc_module"  {
-    cidr_block = var.vpc_cidr
-    tags = {
-        Name = "${var.project}-vpc"
-        env = var.env
-    }  
+   so
 }
