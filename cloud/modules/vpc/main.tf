@@ -36,11 +36,11 @@ resource "aws_internet_gateway" "my_igw" {
   }
 }
 
-resource "aws_default_route_table" "examle" {
+resource "aws_default_route_table" "example" {
   default_route_table_id = aws_vpc.my_vpc.default_route_table_id
   route {
     cidr_block = "10.0.1.0/24"
-    gateway_id = aws_internet_gateway.my_igw.id
+    gateway_id = aws_internet_gateway.example.id
   }
   tags = { 
     Name = "${var.project}-rt"
