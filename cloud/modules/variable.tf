@@ -10,5 +10,5 @@ variable "env"{
     default = "dev"
 }
 
-variable "pri_sub_cidr" {
+variable "private_cidr" {
     default = "10.10.0.0/20"
