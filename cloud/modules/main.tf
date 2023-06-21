@@ -21,7 +21,7 @@ resource "aws_vpc_module"  {
 
 resource "aws_security_group" "my_sg" {
     name = "${var.project}-sg"
-    vpc_id = module.my_vpc_module
+    vpc_id = module.my_vpc_module.vpc_id
     description = "allow http and https service"
   
   ingress {
