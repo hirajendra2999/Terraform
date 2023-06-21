@@ -16,5 +16,5 @@ resource "aws_vpc_module"  {
    vpc_cidr = var.vpc_cidr
    env = var.environment
    pri_sub_cidr = var.private_cidr
-   pri_sub_cidr = var.private_cidr
+   pub_sub_cidr = var.public_cidr
 }
