@@ -23,4 +23,5 @@ module "my_instance" {
   source = "./modules/instance"
   count = var.count
   image_id = var.image_id
+  instance_type
 }
