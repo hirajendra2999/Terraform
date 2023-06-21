@@ -26,5 +26,5 @@ module "my_instance" {
   instance_type = var.instance_type
   key_pair = var.key_pair
   project = var.project
-  
+  env = var.
 }
