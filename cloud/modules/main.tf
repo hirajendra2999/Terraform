@@ -25,4 +25,5 @@ module "my_instance" {
   image_id = var.image_id
   instance_type = var.instance_type
   key_pair = var.key_pair
+  project = 
 }
