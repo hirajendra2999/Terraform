@@ -12,3 +12,8 @@ variable "env"{
 
 variable "private_cidr" {
     default = "10.10.0.0/20"
+}
+
+variable "private_cidr" {
+    default = "10.10.0.0/20"
+}
