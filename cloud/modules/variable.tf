@@ -19,10 +19,9 @@ variable "public_cidr" {
 }
 
 variable "count" {
-    default = "10.10.0.0/16"
-}
+    default = 2
 
-variable "env"{
+variable "image"{
     default = "dev"
 }
 
