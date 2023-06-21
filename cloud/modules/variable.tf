@@ -26,7 +26,7 @@ variable "image_id"{
 }
 
 variable "instance_type" {
-    default = "10.10.0.0/20"
+    default = "t2.micro"
 }
 
 variable "key_pair" {
