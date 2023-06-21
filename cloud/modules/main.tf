@@ -11,5 +11,6 @@ provider "aws" {
 }
 
 resource "aws_vpc_module"  {
-   source = "./modules/"
+   source = "./modules/vpc"
+   
 }
