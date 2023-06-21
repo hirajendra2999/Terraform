@@ -2,9 +2,7 @@ variable  "count" {}
 variable "image_id" {}
 variable "instance_type" {}
 variable "key_pair" {}
-variable "pub_sub_cidr" {}
 variable  "project" {}
-variable "vpc_cidr" {}
 variable "env" {}
 variable "pri_sub_cidr" {}
 variable "pub_sub_cidr" {}
