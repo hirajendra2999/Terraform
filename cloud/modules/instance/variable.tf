@@ -8,3 +8,4 @@ variable "subnet_id" {}
 variable "sg_ids" {
     type = list
 }
+
