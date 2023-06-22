@@ -37,6 +37,3 @@ variable "instance_type" {
 variable "key_pair" {
     default = "rajmumbai"
 }
-variable "" {
-  
-}
