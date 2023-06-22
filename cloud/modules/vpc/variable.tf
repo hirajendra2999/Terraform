@@ -1,10 +1,5 @@
-variable  "count" {}
-variable "image_id" {}
-variable "instance_type" {}
-variable "key_pair" {}
-variable  "project" {}
+variable "project" {}
+variable "vpc_cidr" {}
 variable "env" {}
-variable "subnet_id" {}
-variable "sg_ids" {
-    type = list
-}
+variable "pri_sub_cidr" {}
+variable "pub_sub_cidr" {}
