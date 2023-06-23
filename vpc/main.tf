@@ -128,4 +128,4 @@ resource "aws_instance" "instance2" {
     aws_security_group.sg1
  ]
 }
-
+*/
