@@ -106,6 +106,7 @@ depends_on = [
  ]
 }
 
+/*
 resource "aws_instance" "instance2" {
     ami = var.image_id
     instance_type = var.instance_type
