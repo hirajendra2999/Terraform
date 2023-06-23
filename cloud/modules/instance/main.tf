@@ -1,5 +1,5 @@
 resource "aws_instance" "my_instance" {
- count = var.ins 
+ count = var.instance_ 
  ami = var.image_id
  instance_type = var.instance_type
  vpc_security_group_ids = var.sg_ids
