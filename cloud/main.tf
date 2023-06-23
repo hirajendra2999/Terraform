@@ -62,13 +62,13 @@ module "my_instance" {
   }
 
 # module "my_instance" {
-  source = "./modules/instance"
-  image_id = var.image_id
-  instance_type = var.instance_type
-  key_pair = var.key_pair
-  project = var.project
-  env = var.environment
-  subnet_id = module.my_vpc_module.pub
-  subnet_id = module.my_vpc_module.pub_sub
-  sg_ids =
-  }
+#  source = "./modules/instance"
+#  image_id = var.image_id
+#  instance_type = var.instance_type
+#  key_pair = var.key_pair
+#  project = var.project
+#  env = var.environment
+#  subnet_id = module.my_vpc_module.pub
+#  subnet_id = module.my_vpc_module.pub_sub
+#  sg_ids =
+#  }
