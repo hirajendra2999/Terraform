@@ -61,7 +61,7 @@ module "my_instance" {
   sg_ids = [aws_security_group.my_sg.id]
   }
 
-# module "my_instance" {
+ module "my_instance" {
 #  source = "./modules/instance"
 #  image_id = var.image_id
 #  instance_type = var.instance_type
