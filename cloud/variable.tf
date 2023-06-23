@@ -22,7 +22,7 @@ variable "public_cidr" {
     default = "10.10.16.0/20"
 }
 
-variable "count" {
+variable "inscount" {
     default = 2
 }
 
