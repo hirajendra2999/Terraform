@@ -51,7 +51,7 @@ resource "aws_security_group" "my_sg" {
     
 module "my_instance" {
   source = "./modules/instance"
-  instancecount = var.instance_count
+  instance_count = var.instance_count
   image_id = var.image_id
   instance_type = var.instance_type
   key_pair = var.key_pair
