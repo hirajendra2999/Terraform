@@ -12,7 +12,7 @@ resource "aws_subnet" "pri_subnet" {
   cidr_block = var.pri_sub_cidr   ###
  
   tags = { 
-    Name =  "${var.project}-private_subnet"
+    Name =  "${var.project}-private_subnet-a"
     env = var.env
   }
 }
