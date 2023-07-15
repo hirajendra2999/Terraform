@@ -101,15 +101,15 @@ tags                     = {
   Name                   = "${var.project}-private-instance"
   env                    = var.env
 }
-depends_on = [ 
+depends_on               = [ 
     aws_security_group.sg1
  ]
 }
 
 /*
 resource "aws_instance" "instance2" {
-    ami = var.image_id
-    instance_type = var.instance_type
+    ami                 = var.image_id
+    instance_type       = var.instance_type
     vpc_security_group_ids = [aws_vpc.my_vpc.default_security_group_id]
     subnet_id = aws_subnet.pub_subnet.id
     key_name = var.key_pair
