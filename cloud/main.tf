@@ -25,10 +25,10 @@ resource "aws_security_group" "my_sg" {
     description       = "allow http and https service"
   
   ingress {
-    protocol = "TCP"
-    from_port = 80
-    to_port = 80
-    cidr_blocks = ["0.0.0.0/0"]
+    protocol           = "TCP"
+    from_port          = 80
+    to_port            = 80
+    cidr_blocks          = ["0.0.0.0/0"]
   }
 
   ingress {
