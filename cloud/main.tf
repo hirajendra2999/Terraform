@@ -21,7 +21,7 @@ module "my_vpc_module" {
 
 resource "aws_security_group" "my_sg" {
     name = "${var.project}-sg"
-    vpc_id = module.my_vpc_module.vpc_id   ####
+    vpc_id = module.my_vpc_module.vpc_id  
     description = "allow http and https service"
   
   ingress {
@@ -45,7 +45,7 @@ resource "aws_security_group" "my_sg" {
     cidr_blocks = ["0.0.0.0/0"]
   }
   depends_on = [ 
-    module.my_vpc_module      #####
+    module.my_vpc_module   
  ]
 }   
     
@@ -57,7 +57,7 @@ module "my_instance" {
   key_pair = var.key_pair
   project = var.project
   env = var.environment
-  subnet_id = module.my_vpc_module.pub_sub
+  subnet_id = module.my_vpc_module.pub_sub   ##
   sg_ids = [aws_security_group.my_sg.id]
   }
 
