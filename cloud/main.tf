@@ -16,13 +16,13 @@ module "my_vpc_module" {
    vpc_cidr           = var.vpc_cidr
    env                = var.environment
    pri_sub_cidr       = var.private_cidr
-   pub_sub_cidr = var.public_cidr
+   pub_sub_cidr       = var.public_cidr
 }
 
 resource "aws_security_group" "my_sg" {
-    name = "${var.project}-sg"
-    vpc_id = module.my_vpc_module.vpc_id  
-    description = "allow http and https service"
+    name              = "${var.project}-sg"
+    vpc_id            = module.my_vpc_module.vpc_id  
+    description       = "allow http and https service"
   
   ingress {
     protocol = "TCP"
