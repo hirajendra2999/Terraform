@@ -23,15 +23,15 @@ variable "vpc_cidr" {
 }
 
 variable "env"{
-    default = "dev"
+    default      = "dev"
 }
 
 variable "pri_sub_cidr" {
-    default = "10.10.0.0/20"
+    default      = "10.10.0.0/20"
 }
 
 variable "project" {
-  default = "cbz"
+  default        = "cbz"
 }
 
 variable "pub_sub_cidr" {
