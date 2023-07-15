@@ -56,9 +56,9 @@ module "my_instance" {
   instance_type         = var.instance_type
   key_pair              = var.key_pair
   project               = var.project
-  env = var.environment
-  subnet_id = module.my_vpc_module.pub_subnet_id 
-  sg_ids = [aws_security_group.my_sg.id]
+  env                   = var.environment
+  subnet_id             = module.my_vpc_module.pub_subnet_id 
+  sg_ids                = [aws_security_group.my_sg.id]
   }
 
 # module "my_instance" {
