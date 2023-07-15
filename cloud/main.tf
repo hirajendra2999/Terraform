@@ -1,8 +1,8 @@
 terraform{
     backend "s3" {
-        bucket = "terraform-buckend-r271"
-        region = "ap-south-1"
-        key = "terraform.tfstate"
+        bucket            = "terraform-buckend-r271"
+        region            = "ap-south-1"
+        key               = "terraform.tfstate"
     }
 }
 
@@ -11,8 +11,8 @@ provider "aws" {
 }
 
 module "my_vpc_module" {
-   source = "./modules/vpc"
-   project = var.project
+   source             = "./modules/vpc"
+   project            = var.project
    vpc_cidr = var.vpc_cidr
    env = var.environment
    pri_sub_cidr = var.private_cidr
