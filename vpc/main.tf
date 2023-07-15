@@ -54,20 +54,20 @@ resource "aws_default_route_table" "main_rt" {
     gateway_id           = aws_internet_gateway.my_igw.id
   }
   tags                   = {
-    Name = "${var.project}-rt"
-    env = var.env
+    Name                 = "${var.project}-rt"
+    env                  = var.env
   }
 }
 
 resource "aws_security_group" "sg1" {
-  name = "${var.project}-sg"
-  vpc_id = aws_vpc.my_vpc.id
-  description = "Allow http service"
+  name                   = "${var.project}-sg"
+  vpc_id                 = aws_vpc.my_vpc.id
+  description            = "Allow http service"
 
   ingress {
-    protocol = "TCP"
-    from_port = 80
-    to_port = 80
+    protocol             = "TCP"
+    from_port            = 80
+    to_port              = 80
     cidr_blocks = ["0.0.0.0/0"]
   }
 
