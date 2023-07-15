@@ -1,14 +1,14 @@
 variable "project" {
-    default            = "cloudblitz"
+    default           = "cloudblitz"
     }
 variable "region" {
-    default           = "ap-south-1"
+    default          = "ap-south-1"
 }
 variable "vpc_cidr" {
-    default           = "10.10.0.0/16"
+    default          = "10.10.0.0/16"
 }
 variable "environment"{
-    default           = "dev"
+    default          = "dev"
 }
 variable "private_cidr" {
     default          = "10.10.0.0/20"
