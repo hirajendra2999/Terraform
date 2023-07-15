@@ -34,14 +34,14 @@ resource "aws_subnet" "pub_subnet" {
     availability_zone  = var.az2
     tags               = {
         Name           = "${var.project}-public-subnet"
-        env = var.env
+        env            = var.env
     }
     map_public_ip_on_launch = true
 }
 
 resource "aws_internet_gateway" "my_igw" {
-  vpc_id = aws_vpc.my_vpc.id
-  tags = {
+  vpc_id               = aws_vpc.my_vpc.id
+  tags                  = {
     Name = "${var.project}-igw"
     env = var.env
   }
