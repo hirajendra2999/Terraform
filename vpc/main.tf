@@ -30,10 +30,10 @@ resource "aws_subnet" "pri_subnet" {
 
 resource "aws_subnet" "pub_subnet" {
     vpc_id             = aws_vpc.my_vpc.id
-    cidr_block = var.pub_sub_cidr
-    availability_zone = var.az2
-    tags = {
-        Name = "${var.project}-public-subnet"
+    cidr_block         = var.pub_sub_cidr
+    availability_zone  = var.az2
+    tags               = {
+        Name           = "${var.project}-public-subnet"
         env = var.env
     }
     map_public_ip_on_launch = true
