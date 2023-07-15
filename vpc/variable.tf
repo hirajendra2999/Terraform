@@ -12,7 +12,7 @@ variable "terraform-buckend" {
 }
 variable "vpc_name" {
   default          = "cbz-vpc"
-    }
+}
 variable "vpc_cidr" {
   default          = "10.10.0.0/16"
 }
