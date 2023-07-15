@@ -13,9 +13,9 @@ provider "aws" {
 module "my_vpc_module" {
    source             = "./modules/vpc"
    project            = var.project
-   vpc_cidr = var.vpc_cidr
-   env = var.environment
-   pri_sub_cidr = var.private_cidr
+   vpc_cidr           = var.vpc_cidr
+   env                = var.environment
+   pri_sub_cidr       = var.private_cidr
    pub_sub_cidr = var.public_cidr
 }
 
