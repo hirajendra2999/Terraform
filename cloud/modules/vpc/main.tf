@@ -15,7 +15,7 @@ resource "aws_subnet" "pri_subnet" {
     Name =  "${var.project}-private_subnet"
     env = var.env
   }
-}
+}        
 
 resource "aws_subnet" "pub_subnet" {
   vpc_id = aws_vpc.my_vpc.id
