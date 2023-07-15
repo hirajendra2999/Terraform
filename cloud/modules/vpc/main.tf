@@ -6,9 +6,7 @@
     "Environment" = "${var.environment_tag}"
   }
 }
-*?
-
-
+*/
 
 
 
