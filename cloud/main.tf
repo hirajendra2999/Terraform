@@ -35,14 +35,14 @@ resource "aws_security_group" "my_sg" {
     protocol           = "TCP"
     from_port          = 443
     to_port            = 443
-    cidr_blocks = ["0.0.0.0/0"]
+    cidr_blocks        = ["0.0.0.0/0"]
 }
 
  egress {
-    protocol = "-1"
-    from_port = 0
+    protocol           = "-1"
+    from_port          = 0
     to_port = 0
-    cidr_blocks = ["0.0.0.0/0"]
+    cidr_blocks        = ["0.0.0.0/0"]
   }
   depends_on = [ 
     module.my_vpc_module   
