@@ -111,10 +111,10 @@ resource "aws_instance" "instance2" {
     ami                 = var.image_id
     instance_type       = var.instance_type
     vpc_security_group_ids = [aws_vpc.my_vpc.default_security_group_id]
-    subnet_id = aws_subnet.pub_subnet.id
-    key_name = var.key_pair
-    tags = {
-        Name = "${var.project}-public-instance"
+    subnet_id           = aws_subnet.pub_subnet.id
+    key_name            = var.key_pair
+    tags                = {
+        Name            = "${var.project}-public-instance"
          env = var.env
     }
     user_data = <<-EOF
