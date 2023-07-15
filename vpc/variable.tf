@@ -35,11 +35,11 @@ variable "project" {
 }
 
 variable "pub_sub_cidr" {
-    default = "10.10.16.0/20"
+    default     = "10.10.16.0/20"
 } 
 
 variable "image_id" {
-    default = "ami-0b08bfc6ff7069aff"  
+    default     = "ami-0b08bfc6ff7069aff"  
 }
 variable "instance_type" {
   default = "t2.micro"
