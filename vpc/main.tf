@@ -115,7 +115,7 @@ resource "aws_instance" "instance2" {
     key_name            = var.key_pair
     tags                = {
         Name            = "${var.project}-public-instance"
-         env = var.env
+         env            = var.env
     }
     user_data = <<-EOF
         #!/bin/bash
@@ -124,7 +124,7 @@ resource "aws_instance" "instance2" {
         systemctl enable httpd
         echo "<h1> hello world" > /var/www/html/index.html
     EOF
-    depends_on = [ 
+    depends_on           = [ 
     aws_security_group.sg1
  ]
 }
