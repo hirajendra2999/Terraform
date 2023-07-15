@@ -22,7 +22,7 @@ resource "aws_subnet" "pub_subnet" {
   cidr_block = var.pub_sub_cidr   ####
   
   tags = { 
-    Name =  "${var.project}-public_subnet"
+    Name =  "${var.project}-public_subnet-b"
     env = var.env
   }
   map_public_ip_on_launch = true
