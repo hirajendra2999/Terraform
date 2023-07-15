@@ -1,8 +1,8 @@
 terraform{
     backend "s3" {
-        bucket            = "terraform-buckend-r271"
-        region            = "ap-south-1"
-        key               = "terraform.tfstate"
+        bucket         = "terraform-buckend-r271"
+        region         = "ap-south-1"
+        key            = "terraform.tfstate"
     }
 }
 
@@ -70,5 +70,5 @@ module "my_instance" {
 #  env                  = var.environment
 #  subnet_id            = module.my_vpc_module.pub
 #  subnet_id            = module.my_vpc_module.pub_sub
-#  sg_ids =
+#  sg_ids               = [aws_security_group.my_sg.id]
 #  }
