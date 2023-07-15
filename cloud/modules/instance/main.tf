@@ -12,4 +12,4 @@ subnet_id = var.subnet_id
 }
 
 
- work in aws Security Hub (Attached EBS volumes should be encrypted at-rest)
+ 
