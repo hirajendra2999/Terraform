@@ -10,7 +10,7 @@ cidr_block = var.vpc_cidr
 resource "aws_subnet" "pri_subnet" {
   vpc_id = aws_vpc.my_vpc.id
   cidr_block = var.pri_sub_cidr   ###
- 
+  availability_zone = "ap-south-1a"
   tags = { 
     Name =  "${var.project}-private_subnet"
     env = var.env
