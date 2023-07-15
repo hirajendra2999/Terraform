@@ -10,7 +10,7 @@ provider "aws" {
     region = var.region
 }
 
-module "aws_vpc_module" {
+module "my_vpc_module" {
    source = "./modules/vpc"
    project = var.project
    vpc_cidr = var.vpc_cidr
