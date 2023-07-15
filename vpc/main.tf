@@ -97,9 +97,9 @@ resource "aws_instance" "instance1" {
   vpc_security_group_ids = [aws_vpc.my_vpc.default_security_group_id]
 subnet_id                = aws_subnet.pri_subnet.id
 key_name                 = var.key_pair
-tags = {
-  Name = "${var.project}-private-instance"
-  env = var.env
+tags                     = {
+  Name                   = "${var.project}-private-instance"
+  env                    = var.env
 }
 depends_on = [ 
     aws_security_group.sg1
