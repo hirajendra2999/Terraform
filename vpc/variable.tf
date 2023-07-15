@@ -1,8 +1,8 @@
 variable  "region" {
-       default      = "ap-south-1"
+       default     = "ap-south-1"
     }
 variable "az1" {
-  default           = "ap-south-1a"
+  default          = "ap-south-1a"
 }
 variable "az2" {
   default         = "ap-south-1b"
