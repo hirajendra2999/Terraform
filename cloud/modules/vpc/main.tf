@@ -12,7 +12,7 @@ resource "aws_subnet" "pri_subnet" {
   cidr_block = var.pri_sub_cidr   ###
  
   tags = { 
-    Name =  "${var.project}-private_subnet-a"
+    Name =  "${var.project}-private_subnet"
     env = var.env
   }
 }
@@ -22,7 +22,7 @@ resource "aws_subnet" "pub_subnet" {
   cidr_block = var.pub_sub_cidr   ####
   
   tags = { 
-    Name =  "${var.project}-public_subnet-b"
+    Name =  "${var.project}-public_subnet"
     env = var.env
   }
   map_public_ip_on_launch = true
