@@ -35,8 +35,8 @@ resource "aws_subnet" "pub_subnet" {
   tags               = {
     Name           = "${var.project}-public-subnet"
     env            = var.env
-    }
-    map_public_ip_on_launch = true
+  }
+  map_public_ip_on_launch = true
 }
 
 resource "aws_internet_gateway" "my_igw" {
